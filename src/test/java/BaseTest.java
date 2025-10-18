@@ -1,8 +1,8 @@
 import com.microsoft.playwright.*;
-import org.junit.jupiter.api.*;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 
 public class BaseTest {
 
@@ -36,29 +36,4 @@ public class BaseTest {
     void closeContext(){
         context.close();
     }
-
-//    public void test() {
-//
-//            Page page = browser.newPage();
-//            page.navigate("https://playwright.dev/");
-//
-//            // Expect a title "to contain" a substring.
-//            assertThat(page).hasTitle(Pattern.compile("Playwright"));
-//
-//            // create a locator
-//            Locator getStarted = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Get Started"));
-//
-//            // Expect an attribute "to be strictly equal" to the value.
-//            assertThat(getStarted).hasAttribute("href", "/docs/intro");
-//
-//            // Click the get started link.
-//            getStarted.click();
-//
-//            // Expects page to have a heading with the name of Installation.
-//            assertThat(page.getByRole(AriaRole.HEADING,
-//                    new Page.GetByRoleOptions().setName("Installation"))).isVisible();
-//
-//            page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("example.png")));
-//    }
-
 }

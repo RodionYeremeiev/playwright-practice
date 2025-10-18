@@ -16,14 +16,18 @@ public class WikiHomePage {
         this.page = page;
     }
 
-    public void navigate(){
+    public void navigate() {
         page.navigate(WIKI_HOME_URL);
     }
 
-    public void search(String input){
+    public void search(String input) {
         page.locator(INPUT_NAME_SEARCH).fill(input);
         page.locator(INPUT_NAME_SEARCH).click();
         page.locator(INPUT_NAME_SEARCH).press(ENTER);
     }
 
+    public WikiEngMainPage chooseLanguage(String input) {
+        page.getByTitle("English — Wikipedia — The Free Encyclopedia").click();
+        return new WikiEngMainPage(page);
+    }
 }

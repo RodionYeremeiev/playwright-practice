@@ -1,15 +1,17 @@
 import org.junit.jupiter.api.Test;
+import pages.wiki.WikiHomePage;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static pages.wiki.WikiHomePage.WIKI_PLAYWRIGHT_URL;
+import static util.Constants.PLAYWRIGHT;
 
 public class WikiTests extends BaseTest{
 
     @Test
     void shouldSearchWiki() {
-        page.navigate("https://www.wikipedia.org/");
-        page.locator("input[name=\"search\"]").click();
-        page.locator("input[name=\"search\"]").fill("playwright");
-        page.locator("input[name=\"search\"]").press("Enter");
-        assertEquals("https://en.wikipedia.org/wiki/Playwright", page.url());
+        WikiHomePage wikiHomePage = new WikiHomePage(page);
+        wikiHomePage.navigate();
+        wikiHomePage.search(PLAYWRIGHT);
+        assertEquals(WIKI_PLAYWRIGHT_URL, page.url());
     }
 }

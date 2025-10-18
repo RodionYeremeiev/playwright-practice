@@ -23,6 +23,7 @@ public class BaseTest {
     @AfterAll
     static void closeBrowser(){
         browser.close();
+        playwright.close();
     }
 
     @BeforeEach

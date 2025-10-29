@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Oct 29 23:04:22 GMT 2025","Wed Oct 29 23:04:23 GMT 2025","925","","WikiTests","","WikiTests","shouldSwitchToEnglishMainPage","shouldSwitchToEnglishMainPage()",""
+"passed","Wed Oct 29 23:04:23 GMT 2025","Wed Oct 29 23:04:24 GMT 2025","654","","WikiTests","","WikiTests","shouldSearchWiki","shouldSearchWiki()",""
+"passed","Wed Oct 29 23:04:24 GMT 2025","Wed Oct 29 23:04:24 GMT 2025","470","","BasicPageTests","","BasicPageTests","shouldCheckTheBox","shouldCheckTheBox(Page)",""
+"passed","Wed Oct 29 23:04:24 GMT 2025","Wed Oct 29 23:04:24 GMT 2025","90","","BasicPageTests","","BasicPageTests","shouldClickButton","shouldClickButton(Page)",""
+"passed","Wed Oct 29 23:04:19 GMT 2025","Wed Oct 29 23:04:22 GMT 2025","2412","","WikiTests","","WikiTests","shouldDisplayWelcomeHeader","shouldDisplayWelcomeHeader()",""

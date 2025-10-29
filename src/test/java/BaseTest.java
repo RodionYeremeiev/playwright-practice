@@ -15,7 +15,7 @@ public class BaseTest {
     public static final BrowserType.LaunchOptions HEADLESS_OFF = new BrowserType.LaunchOptions().setHeadless(false);
 
     @BeforeAll
-    static void launchChromiumBrowser(){
+    static void launchChromiumBrowser() {
         playwright = Playwright.create();
         browser = playwright.chromium().launch(HEADLESS_OFF);
     }
